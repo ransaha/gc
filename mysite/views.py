@@ -5,5 +5,3 @@ from django.db import connection
 
 def home(request):
       return render(request, 'home.html')
-  
-# Create your views here.
