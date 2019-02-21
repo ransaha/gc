@@ -10,11 +10,11 @@ Class-based views
     1. Add an import:  from other_app.views import Home
     """
 
-    
-from django.conf.urls import patterns, include, url
+from django.conf.urls import url, include
 from django.contrib import admin
 
-urlpatterns = patterns(
-   url(r'^$', 'mysite.views.home', name = 'home'),
-   url(r'^admin', include(admin.site.urls)),
-)
+urlpatterns = [
+    # Examples:
+    url(r'^$', 'mysite.views.home', name='home'),
+    url(r'^admin/', include(admin.site.urls)),
+]
