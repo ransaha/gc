@@ -17,5 +17,5 @@ from mysite.views import *
 urlpatterns = [
     # Examples:
     url(r'^$',home, name='home'),
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', admin.site.urls),
 ]
